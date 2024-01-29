@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Budget</title>
+    <!--first SEO Change-adding description in meta data-->
+    <meta name="description" content="Learn to manage your money with our application."
+    <!--second SEO change-to make title more appealing-->
+    <title>Personal Money budgeting-Budget Management Application</title>
     <meta name="description" content="A free personal budger app">
     <meta name="keywords" content="app free budget finance">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
-<a href="#main" class="skip">Skip to content</a>
+<!-- This is a Semantic HTML Change-adding header tag -->
+<!--This is a A11y change (second)-adding roles to header, main and footer-->
+<header role="Banner">
+    <!--first A11y change-adding ARIA-label-->
+<a href="#main" class="skip" aria-label="Skip to main content">Skip to content</a>
 
     <nav>
         <ul>
@@ -26,13 +32,16 @@
         <h1>Personal Budget</h1>
         <h2>A personal-budget management app</h2>
     </div>
-
-    <main class="center" id="main">
+</header>
+    <main class="center" id="main" role="main">
 
         <div class="page-area">
+            <!--This is the second semantic change-->
+            <section>
 
             <article>
-                <h1>Stay on track</h1>
+                <!--third SEO change-hierarchial heading elements(previous h1-> h2)-->
+                <h2>Stay on track</h2>
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
@@ -41,14 +50,14 @@
             </article>
     
             <article>
-                <h1>Alerts</h1>
+                <h2>Alerts</h2>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
             </article>
     
             <article>
-                <h1>Results</h1>
+                <h2>Results</h2>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
                     Also, they to live happier lives... since they expend without guilt or fear... 
@@ -57,14 +66,14 @@
             </article>
     
             <article>
-                <h1>Free</h1>
+                <h2>Free</h2>
                 <p>
                     This app is free!!! And you are the only one holding your data!
                 </p>
             </article>
     
             <article>
-                <h1>Stay on track</h1>
+                <h2>Stay on track</h2>
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
@@ -73,14 +82,14 @@
             </article>
     
             <article>
-                <h1>Alerts</h1>
+                <h2>Alerts</h2>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
             </article>
     
             <article>
-                <h1>Results</h1>
+                <h2>Results</h2>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
                     Also, they to live happier lives... since they expend without guilt or fear... 
@@ -89,21 +98,22 @@
             </article>
     
             <article>
-                <h1>Chart</h1>
+                <h2>Chart</h2>
                 <p>
-                    <canvas id="myChart" width="400" height="400"></canvas>
+                    <!--this is a A11y change (third)-adding adding alternate text to images-->
+                    <canvas id="myChart" width="400" height="400" alt="Financial data representation"></canvas>
                 </p>
             </article>
-
+        </section>
         </div>
 
     </main>
-
-    <footer class="bottom">
+    <!--Third semantic HTML change-->
+    <footer role="Closing information">
         <div class="center">
             All rights reserved &copy; Fabio Nolasco
         </div>
-    </footer>
+    </footer> 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
