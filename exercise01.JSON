@@ -1,0 +1,37 @@
+{
+    "myBudget" : [
+        {
+            "title": "Eat out",
+            "budget": 25
+        },
+        {
+            "title": "Rent",
+            "budget" : 275
+        },
+        {
+            "title": "Grocery",
+            "budget": 110
+        },
+        {
+            "title": "Electricity bill",
+            "budget": 40
+        },
+        {
+            "title": "Gasoline",
+            "budget": 65
+        },
+        {
+            "title": "Shopping",
+            "budget": 90
+        },
+        {
+            "title" : "Walmart and Amazon",
+            "budget": 80
+        },
+        {
+            "title": "Miscellaneous",
+            "budget": 75
+        }
+
+    ]
+}
