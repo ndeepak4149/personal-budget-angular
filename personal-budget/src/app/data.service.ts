@@ -5,8 +5,8 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class DataService {
 
+export class DataService {
     public dataSource: any = {
         datasets: [
           {
